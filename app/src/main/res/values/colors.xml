@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- definicija određenih boja -->
+    <color name="primaryColor">#03A9F4</color>
+    <color name="primaryDarkColor">#0288D1</color>
+    <color name="accentColor">#5C946E</color>
+    <color name="backColor">#EEE</color>
+    <color name="dividerColor">#FFFFFF</color>
+    <color name="transparent_background">#00FF0000</color>
+</resources>

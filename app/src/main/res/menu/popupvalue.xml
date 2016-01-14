@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ml100_id"
+        android:title="100ml" />
+    <item
+        android:id="@+id/ml200_id"
+        android:title="200ml" />
+    <item
+        android:id="@+id/ml300_id"
+        android:title="300ml" />
+
+</menu>

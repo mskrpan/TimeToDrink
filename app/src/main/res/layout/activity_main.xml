@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimeToDrink">
+
+    <!--pozivamo naš app bar tako da je u biti dio layouta sad -->
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/app_bar" />
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/app_bar">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/rLay">
+            </RelativeLayout>
+
+            <at.grabner.circleprogress.CircleProgressView
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/circleView"
+                CircleProgressView:contourSize="0dp"
+                CircleProgressView:rimWidth="35dp"
+                CircleProgressView:rimColor="#B2DFDB"
+                CircleProgressView:barWidth="35dp"
+                CircleProgressView:barColor="#00796B"
+                CircleProgressView:showUnit="true"
+                CircleProgressView:unit="%"
+                CircleProgressView:unitColor="#009688"
+                CircleProgressView:textColor="#00796B"
+                CircleProgressView:seekMode="false"
+                android:layout_below="@+id/rLay"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:text="More for today:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/circleView"
+                android:textSize="20dp"
+                android:id="@+id/tvDisplay"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:textSize="20dp"
+                android:layout_below="@+id/tvDisplay"
+                android:id="@+id/tvNumber" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/tvNumber"
+                android:id="@+id/bDrinkWater"
+                android:text="Drink"
+                android:onClick="ButtonDrink"
+                style="?android:attr/borderlessButtonStyle"
+                android:elevation="2dp"
+                android:background="@drawable/button_shape"
+                android:textColor="#FFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ml"
+                android:textSize="20dp"
+                android:id="@+id/textView"
+                android:layout_above="@+id/bDrinkWater"
+                android:layout_toRightOf="@+id/tvNumber"
+                android:layout_toEndOf="@+id/tvNumber"
+                android:layout_marginLeft="9dp"
+                android:layout_marginStart="9dp" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <!--fragment za naš navigation bar -->
+        <fragment
+            android:id="@+id/fragment_navigation_drawer"
+            android:layout_width="@dimen/nav_draw_witdh"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:layout="@layout/fragment_navigation_drawer"
+            android:name="com.project.timetodink.dipl.sjzb147.itzstevo.timetodrink.NavigationDrawerFragment"
+            tools:layout="@layout/fragment_navigation_drawer" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>
+

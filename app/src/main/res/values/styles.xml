@@ -1,0 +1,25 @@
+<resources>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <!-- Customize your theme here. -->
+    </style>
+    <!-- NoActionBar definiramo da više nema avtion bara-->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- definiranje boja za prozor tj pozivamo boje za prozor-->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/accentColor</item>
+
+        <!-- -->
+    </style>
+    <!-- definiranje boja za text u action baru-->
+    <style name="MojCustomStilBoje" parent="ThemeOverlay.AppCompat.Dark">
+        <!-- text-->
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <!-- točkice-->
+        <item name="android:textColorSecondary">#FFFFFF</item>
+    </style>
+
+</resources>

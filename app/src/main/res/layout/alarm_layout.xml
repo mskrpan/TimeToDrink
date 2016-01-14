@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--pozivamo naš app bar tako da je u biti dio layouta sad -->
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/app_bar" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alarm Planer"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:id="@+id/tvAlarm"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/app_bar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(Please set your time when you want to be notified)"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:id="@+id/tvAlarm2"
+        android:layout_below="@+id/tvAlarm"
+        android:layout_marginBottom="15dp"/>
+
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAlarm2"
+        android:text="6:00 AM"
+        android:id="@+id/sOnOff1"
+        android:padding="10dp"
+        android:onClick="onSwitch" />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sOnOff1"
+        android:text="8:00 AM"
+        android:id="@+id/sOnOff2"
+        android:padding="10dp"
+        android:onClick="onSwitch_Two" />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sOnOff2"
+        android:text="10:00 AM"
+        android:id="@+id/sOnOff3"
+        android:padding="10dp"
+        android:onClick="onSwitch_Three" />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sOnOff3"
+        android:text="12:00 AM"
+        android:id="@+id/sOnOff4"
+        android:padding="10dp"
+        android:onClick="onSwitch_Four" />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sOnOff4"
+        android:text="2:00 PM"
+        android:id="@+id/sOnOff5"
+        android:padding="10dp"
+        android:onClick="onSwitch_Five" />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sOnOff5"
+        android:text="4:00 PM"
+        android:id="@+id/sOnOff6"
+        android:padding="10dp"
+        android:onClick="onSwitch_Six" />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sOnOff6"
+        android:text="6:00 PM"
+        android:id="@+id/sOnOff7"
+        android:padding="10dp"
+        android:onClick="onSwitch_Seven" />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sOnOff7"
+        android:text="8:00 PM"
+        android:id="@+id/sOnOff8"
+        android:padding="10dp"
+        android:onClick="onSwitch_Eight" />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sOnOff8"
+        android:text="10:00 PM"
+        android:id="@+id/sOnOff9"
+        android:padding="10dp"
+        android:onClick="onSwitch_Nine" />
+
+</RelativeLayout>
